@@ -20,7 +20,7 @@ public class TestBase {
 	public TestBase() {
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("/Users/valley/Work/eclipse-workspace/com.SeleniumFramework/src/main/java/com/amazon/config/config.properties");
+			FileInputStream ip = new FileInputStream("./src/main/java/com/amazon/config/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -35,10 +35,10 @@ public class TestBase {
 	public static void initialization() {		
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "/Users/valley/Downloads/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "./src/main/resource/geckodriver");
 			driver = new FirefoxDriver();			
 		}else if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "/Users/valley/Downloads/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "./src/main/resource/chromedriver");
 			driver = new ChromeDriver();
 		}
 		

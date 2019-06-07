@@ -5,6 +5,7 @@
     <classes>
       <class name="com.qa.testcases.TestSolution">
         <methods>
+          <include name="tearDown"/>
           <include name="setup"/>
           <include name="signInTest"/>
         </methods>
