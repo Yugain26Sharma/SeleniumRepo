@@ -49,7 +49,9 @@ public class TestSolution extends TestBase {
 		homePage.accountDetails();
 		shoppingList.shareShoppingList();
 	}
-	
+	public void tearDown1() {
+		driver.quit();
+	}
    @AfterMethod
 	public void tearDown() {
 		driver.quit();
