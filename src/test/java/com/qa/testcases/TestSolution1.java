@@ -12,7 +12,7 @@ import com.amazon.pages.HomePage;
 import com.amazon.pages.ShoppingList;
 import com.amazon.pages.SignInPage;
 //yug
-public class TestSolution extends TestBase {
+public class TestSolution1 extends TestBase {
 	
 	SignInPage signinPage;
 	HomePage homePage;
@@ -21,7 +21,7 @@ public class TestSolution extends TestBase {
 	HeadphoneInfoPage headphoneInfoPage;
 	ShoppingList shoppingList;
 	
-	public TestSolution() {
+	public TestSolution1() {
 		super();
 	}
 
